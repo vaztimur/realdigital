@@ -6,41 +6,57 @@ body {
 }
 header {
     background-color: #4A9630;
-    display: flex;
     height: 90px;
 }
 
+.container {
+    display: flex;
+    width: 80%;
+}
 
 
-#logo, #payback {
-    width: 135px;
-    height: 100%;
+#logo{
+    flex-basis: 135px;
     margin-left: 10px;
-    float: left;
     padding: 5px 30px 5px;
     background-color: white;
 }
 
-#payback {
-    width: 135px;
-    height: 100%;
-    margin-left: 10px;
-    float: right;
+#actions {
+    margin-top: 10px;
+    flex-basis: 250px;
+    margin-left: auto;
     padding: 5px 30px 5px;
-    background-color: white;
+    
 }
-#hero {
-    clear: left;
+
+
+
+
+
+#actions img{
+     width: 80px;
+     float: left;
+     margin-left: 10px;
+     margin-right: 10px;
 }
+
+#actions a {
+    position: absolute;
+    top: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
 nav ul {
-    
-    
-    position: relative;
-    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-left: 10px;
     list-style: none;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 60px;
 
 }
 
@@ -51,7 +67,7 @@ nav ul li a {
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
-    padding: 20px 20px;
+    padding: 20px 30px;
     color: white;
     letter-spacing: 1px;
 }
@@ -65,27 +81,9 @@ nav ul li a:focus{
     color: #333;
 }
 
-
-
-@media screen and (min-width: 576px) {
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: space-between;
-    }
-
-    nav ul li {
-        flex: 1 0 auto;
-    }
-
-    .logo {
-        display: block;
-        text-align: center;
-    }
-
-    .logo .fa {
-        display: none;
-    }
+#hero {
+    clear: left;
 }
+
+
 

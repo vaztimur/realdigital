@@ -17,39 +17,151 @@
 
 <body>
     <header>
-
-        <picture id="logo" >
-            <img src="img/real-logo-color.svg" alt="Real Logo">
-        </picture>
-        <nav>
-            <ul>
-                <li><a href="#">Marktplatz</a></li>
-                <li><a href="#">Lebensmittelshop</a></li>
-                <li><a href="#">Rezepte</a></li>
-                <li><a href="#">Mein Markt</a></li>
-                <li><a href="#">Infos&Services</a></li>
-            </ul>
-        </nav>
-
+        <div class="container">
+            <picture id="logo">
+                <img src="img/real-logo-color.svg" alt="Real Logo">
+            </picture>
+            <nav>
+                <ul>
+                    <li><a href="#">Marktplatz</a></li>
+                    <li><a href="#">Lebensmittelshop</a></li>
+                    <li><a href="#">Rezepte</a></li>
+                    <li><a href="#">Mein Markt</a></li>
+                    <li><a href="#">Infos&Services</a></li>
+                </ul>
+            </nav>
+            <div id="actions">
+                <img src="img/payback-logo.svg" alt="Payback">
+                <a href="#">Bei Payback anmelden</a>
+            </div>
+        </div>
     </header>
 
+    <div class="container">
 
-    <!-- <img src="img/cart.png" id="img-cart"> -->
-    <!-- <div id="shopping-cart">
-                                <table id="cart-content" class="u-full-width">
-                                    <thead>
-                                        <tr>
-                                            <th>Image</th>
-                                            <th>Name</th>
-                                            <th>Price</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
+        <div id="hero">
 
-                                <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
-                            </div> -->
+
+
+            <div class="cart">
+                <ul>
+                    <li class="submenu">
+                        <img src="img/cart.png" id="img-cart">
+                        <div id="shopping-cart">
+                            <table id="cart-content" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Gericht</th>
+                                        <th>Preis</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <div class="recipe-container">
+            <p>
+                <label>Zutat für
+                    <input type="number" id="quantity" name="quantity" value="4" min="4">
+                    Personen</label>
+            </p>
+    
+            <table id="#recipe">
+                <thead>
+                    <tr>
+                        <td>Zutat</td>
+                        <td>Menge</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mehl</td>
+                        <td>100 g</td>
+                    </tr>
+                    <tr>
+                        <td>Mandeln, fein gemahlen</td>
+                        <td>50 g</td>
+                    </tr>
+                    <tr>
+                        <td>Milch</td>
+                        <td>125 ml</td>
+                    </tr>
+                    <tr>
+                        <td>Sahne</td>
+                        <td>125 ml</td>
+                    </tr>
+                    <tr>
+                        <td>Ei, größe M</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Zucker</td>
+                        <td>1 TL</td>
+                    </tr>
+                    <tr>
+                        <td>Salz</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Butterschmalz, zum ausbacken</td>
+                        <td>2 EL</td>
+                    </tr>
+                    <tr>
+                        <td>Milch</td>
+                        <td>30 ml</td>
+                    </tr>
+                    <tr>
+                        <td>Mascarpone</td>
+                        <td>250 g</td>
+                    </tr>
+                    <tr>
+                        <td>Honig</td>
+                        <td>130 g</td>
+                    </tr>
+                    <tr>
+                        <td>Zitrone, Saft einer</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Himbeeren</td>
+                        <td>500 g</td>
+                    </tr>
+                    <tr>
+                        <td>Mandelblättchen, gebräunte</td>
+                        <td>2 EL</td>
+                    </tr>
+                    <tr>
+                        <td>Puderzucker, zum bestäuben</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Minze</td>
+                        <td>2-3 Stängel</td>
+                    </tr>
+                    <tr>
+                        <td>Schokoladeneis, von Mövenpick</td>
+                        <td>1 Packung</td>
+                    </tr>
+                    <tr>
+                        <td>Preis:</td>
+                        <td id="price">5,99€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
 
 </body>
